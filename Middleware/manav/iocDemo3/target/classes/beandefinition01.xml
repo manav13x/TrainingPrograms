@@ -1,0 +1,19 @@
+<beans xmlns="http://www.springframework.org/schema/beans"	
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+<bean
+id = "udsBean" 
+class  = "com.verizon.spring.service.IuserDefault"
+/>
+<bean
+id = "upsBean" 
+class  = "com.verizon.spring.service.UserParmed">
+<!-- <constructor-arg index = "0" value = "Namaskar"/> --><!-- this is constructor injection -->
+<property name="welcomeStatement" value ="Hanan"></property>
+<!-- this is setter injection -->
+</bean>
+<!--  -->
+
+</beans>

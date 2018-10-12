@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+			<item value="gfhfg"/>
+			<item value="com.verizon"/>
+			<item value="com.verizon.springcore"/>
+			<item value="com.verizon.spring.ioc"/>
+			<item value="com.verizon.spring.repeat"/>
+		</list>
+		<list key="name">
+			<item value="springdemo"/>
+		</list>
+		<list key="artifactId">
+			<item value="fhgh"/>
+			<item value="emp-app"/>
+			<item value="book-store-app"/>
+			<item value="spring-web-demo"/>
+			<item value="address-book"/>
+			<item value="iocdemo2new"/>
+			<item value="iocDemo3"/>
+			<item value="iocDemo2"/>
+			<item value="iocDemo"/>
+			<item value="springdemo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+			<item value="3.0"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Users\verizon\workspace\manav\iocDemo\src\main\java\com\verizon\springCore\iocdemo\service\UserServiceParmedImpl.java"/>
+			<item value="C:\Users\verizon\workspace\manav\book-store-app"/>
+			<item value="C:\Users\verizon\workspace\manav\spring-web-demo\src\main\java\com\verizon\controller\BookController.java"/>
+			<item value="C:\Users\verizon\workspace\manav\MyFirstJavaWeb\WebContent\home.htm"/>
+			<item value="C:\Users\verizon\workspace\manav\iocDemo"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+	margin: 5px;
+	padding: 10px;
+}
+h2,h3{
+	text-align: center;
+	color:black;
+}
+body {
+	background-color: cadetblue;
+}
+
+header, footer {
+	min-height: 100px;
+	background-color: yellow;
+	color: azure;
+}
+header {
+	margin-bottom: 0px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+nav {
+	min-height: 50px;
+	background-color: gray;
+	color: white;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+main {
+	min-height: 250px;
+	background-color: lightblue;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+main a{
+	text-decoration: none;
+	padding:10px;
+	color:white;
+	background-color: seagreen;
+	border:1px solid black;
+		border-radius: 8px;
+}
+main a:HOVER{
+	text-decoration: none;
+	padding:10px;
+	color:black;
+	background-color: white;
+	border:1px solid black;
+border-radius: 8px;
+}
+footer {
+	margin-top: 0px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+	background-color: seagreen;
+	border-radius: 8px;
+	color: black;
+}
+nav a:HOVER{
+	display: inline-block;
+	text-decoration: none;
+	background-color: white;
+	border-radius: 8px;
+	color: black;
+}

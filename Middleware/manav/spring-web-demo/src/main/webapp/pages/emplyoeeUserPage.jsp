@@ -1,0 +1,47 @@
+<%@ taglib uri = "http://www.springframework.org/tags/form" prefix="form" %>
+<html>
+<head>
+<title>Empltoee View page</title>
+</head>
+<body>
+<h1>Emp page</h1>
+	<table>
+	<tr>
+	<td>Empid</td>
+	<td>${emp.empId}</td>
+	</tr>
+		<tr>
+	<td>Name</td>
+	<td>${emp.name}</td>
+	</tr>
+		<tr>
+	<td>Basic</td>
+	<td>${emp.basic}</td>
+	</tr>
+		<tr>
+	<td>Department</td>
+	<td>${emp.dept}</td>
+	</tr>
+		<tr>
+	<td>Gender</td>
+	<td>${emp.gender}</td>
+	</tr>
+			<tr>
+	<td>Experience</td>
+	<td>${emp.experience}</td>
+	</tr>
+				<tr>
+	<td>Hra</td>
+	<td>${emp.hra}</td>
+	</tr>
+				<tr>
+	<td>TA</td>
+	<td>${emp.ta}</td>
+	</tr>
+				<tr>
+	<td>NetPay</td>
+	<td>${emp.netPay}</td>
+	</tr>
+	</table>
+</body>
+</html>

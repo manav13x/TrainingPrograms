@@ -1,0 +1,15 @@
+package com.verizon.empPractice.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="empl")
+public class Employee {
+
+	private long empid;
+	private String fName;
+	private String lName;
+	private GENDER gender;
+	private DEPT dept;
+}

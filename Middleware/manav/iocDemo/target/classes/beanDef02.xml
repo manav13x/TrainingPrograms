@@ -1,0 +1,37 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+   http://www.springframework.org/schema/util
+    http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+
+	<!-- this namespace has p been included -->
+	<bean id="upsBean" scope="prototype" init-method="doOnStartUp"
+		destroy-method="doOnTearDown"
+		class="com.verizon.springCore.iocdemo.service.UserServiceParmedImpl"
+		p:welcomeStatement="Hanan" />
+<!-- p namespace  is used for property based setter injection -->
+
+	<bean id="wtpBean"
+		class="com.verizon.springCore.iocdemo.service.WelcomeStatementProviderTimlyImply" />
+
+
+	<bean id="uesBean"
+		class="com.verizon.springCore.iocdemo.service.UserServiceEnhancedImpl"
+		p:wsProvider-ref="wtpBean" />
+
+
+<util:set id="wstmts" set-class = "java.util.TreeSet" value-type = "java.lang.String">
+				<value>Hai</value>
+				<value>How are u </value>
+				<value>Gracias</value>
+				<value>Mucho gusto!!</value>
+</util:set>
+	<bean id="umsBean"
+		class="com.verizon.springCore.iocdemo.service.UserServiceMultipleImpl"
+	p:welcomeStatements-ref = "wstmts"/>
+
+</beans>
