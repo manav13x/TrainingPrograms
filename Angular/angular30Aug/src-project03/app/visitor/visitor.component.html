@@ -1,0 +1,37 @@
+<h3>Visitor Entry Form!!!!</h3>
+<form>
+  <div>
+    <label>Title</label>
+    <input type="text" name="tlt" [(ngModel)]="visitor.title">
+  </div>
+  <div>
+    <label>First Name:</label>
+    <input type="text" name="unm" [(ngModel)]="visitor.firstName">
+  </div>
+  <div>
+    <label>Last Name:</label>
+    <input type="text" name="lnm" [(ngModel)]="visitor.lastName">
+  </div>
+  <div>
+    <label>
+    <input type="checkbox" name="ism" [(ngModel)]="visitor.isMarried">
+    I am Married.
+  </label>
+  </div>
+  <div>
+    <label>Spouse name:</label>
+    <input type="text" name="snm" [(ngModel)]="visitor.spouse">
+  </div>
+</form>
+
+<h3>Visitor Details</h3>
+
+<table>
+  <tr><th>Full Name</th><th>Martial Status</th></tr>
+  <tr>
+    <td>{{visitor.title}}.{{visitor.firstName}} {{visitor.lastName}}</td>
+    <td>
+      {{visitor.isMarried?"Married to "+visitor.spouse:"Not Married"}}
+    </td>
+  </tr>
+</table>

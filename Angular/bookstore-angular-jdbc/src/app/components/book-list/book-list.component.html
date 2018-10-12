@@ -1,0 +1,21 @@
+<h3>Book List </h3>
+<table>
+  <thead>
+    <tr>
+    <th>Book#</th>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Type</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor = "let b of books">
+      <td>{{b.bcode}}</td>
+      <td>{{b.title}}</td>
+      <td>{{b.price}}</td>
+      <td>{{b.category}}</td>
+      <td>{{b.type}}</td>
+    </tr>
+  </tbody>
+</table>

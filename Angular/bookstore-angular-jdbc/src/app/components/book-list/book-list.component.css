@@ -1,0 +1,23 @@
+table{
+    width: 950px;
+    margin: auto;
+    border: 1px solid black;
+   
+    border-radius: 15px;
+    
+}
+tr,td{
+    padding: 10px;
+    border-bottom: 0.5px solid black;
+}
+tbody tr:last-child td{
+    border: 0px;
+}
+td:nth-child(1),td:nth-child(3)
+{
+    text-align: right;
+}
+td:nth-child(4),td:nth-child(5),td:nth-child(2)
+{
+    text-align: center;
+}

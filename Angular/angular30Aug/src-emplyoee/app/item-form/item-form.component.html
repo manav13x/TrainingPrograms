@@ -1,0 +1,30 @@
+<h3>Emplyoee Input Form</h3>
+<form>
+  <div>
+    <label>Emplyoee id:</label>
+    <input type="number"  name = "eno" [(ngModel)] = "empl.empid"
+    readonly="{{isEdit?'readonly':''}}"
+    >
+  </div>
+  <div>
+      <label>Emplyoee name:</label>
+      <input type="text"  name = "enm" [(ngModel)] = "empl.empname">
+    </div>
+    <div>
+        <label>Enter Basic salary:</label>
+        <input type="text"  name = "bas" [(ngModel)] = "empl.basic">
+      </div>
+      <div>
+          <label>Enter Hra:</label>
+          <input type="text"  name = "hra" [(ngModel)] = "empl.hra">
+        </div>
+        <div>
+          <label>Enter Dept:</label>
+          <input type="text"  name = "dept" [(ngModel)] = "empl.dept">
+        </div>
+
+        <div>
+          <button type="button" (click)="cancel()">Cancel</button>
+          <button type="button" (click)="save()">Save</button>
+        </div>
+</form>

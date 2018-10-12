@@ -1,0 +1,53 @@
+h3{
+    text-align: center;
+}
+.booksList , .dashboard{
+    width:950px;
+    margin:auto;
+}
+.dashboard{
+    padding: 15px;
+}
+.dashboard>div{
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid black;
+}
+.bookCard{
+    border:1px solid black;
+    border-radius:10px;
+    float:left;
+    width:255px;
+    height:100px;
+    margin:10px;
+    padding:10px;
+}
+.bookCard:hover{
+    background-color:#ccaacc;
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
+.typeIcon{
+    float:left;
+    width:50px;
+    height:100%;
+    margin-left: 4px;
+}
+.typeIcon img{
+    width: 50px;
+}
+.bookDetails{
+    width:200px;
+    height:100%;
+    float:left;
+}
+.bookDetails span{
+    display: block;
+    font-weight: 500;
+    padding:2px;
+    margin:2px;
+}
