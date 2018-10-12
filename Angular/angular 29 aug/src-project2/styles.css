@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin:5px;
+    padding: 10px;
+}
+body{
+    background-color: cadetblue;
+}
+header,footer{
+    min-height: 150px;
+    background-color: brown;
+    color: azure; 
+}
+header{
+    margin-bottom: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+nav{
+    min-height: 50px;
+    background-color: aqua;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+main{
+    min-height: 250px;
+    background-color: azure;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+footer{
+    margin-top: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: bisque;
+    border-radius: 8px;
+    color: black;
+}
+nav a:hover {
+    display: inline-block;
+    text-decoration: none;
+    background-color:red;
+    border-radius: 8px;
+    color:wheat;
+}
+

@@ -1,0 +1,28 @@
+table{
+    border : 1px solid black;
+    padding: 5px;
+    width: 100%;
+}
+td,tr,th{
+    border-bottom: .75px solid black; 
+}
+td{
+    text-align:center;
+    
+}
+tr:nth-child(odd)
+{
+    background-color: lightblue;
+}
+tfoot tr,tfoot th{
+    border-bottom: 0px;
+}
+.btn{
+    background-color: seagreen;
+    color: white;
+    text-decoration: none;
+    cursor: grab;
+    border-radius: 5px;
+    padding: 5px;
+    display: inline-block;
+}

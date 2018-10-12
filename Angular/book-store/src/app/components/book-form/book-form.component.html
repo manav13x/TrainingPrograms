@@ -1,0 +1,67 @@
+<h3>
+  {{isEdit?"Edit":"New"}} Book
+</h3>
+<form name="form" #f=ngForm novalidate (ngSubmit)="f.form.valid && saveBook()">
+  <h3>Book Details</h3>
+  <table>
+    <tr>
+      <th>Book#</th>
+      <td>
+        <input name="bcode" type="number" [(ngModel)]="book.bcode" *ngIf="!isEdit" 
+        
+        />
+        <span *ngIf="isEdit">{{book.bcode}}</span>
+      </td>
+    </tr>
+    <tr>
+      <th>Title</th>
+      <td>
+        <input name="btitle" type="text" [(ngModel)]="book.title" #title=ngModel required  minlength="5" maxlength="30" />
+        <ul [hidden]=title.valid>
+          <li [hidden]=title.required>Cannot Be Empty</li>
+          <li [hidden]=title.minlength>Cannot be less than 5 chars in length</li>
+          <li [hidden]=title.maxlength>Cannot be more than 30 chars in length</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td>
+        <input name="price" type="decimal" [(ngModel)]="book.price" />
+      </td>
+    </tr>
+    <tr>
+      <th>Category</th>
+      <td>
+        <select name="category" [(ngModel)]="book.category" #category=ngModel required>
+          <option value="">-------Select------</option>
+          <option value="Novel">Novel</option>
+          <option value="TextBook">Textbook</option>
+          <option value="Magazine">Magazine</option>
+        </select>
+        <ul [hidden]=category.valid>
+          <li>please select one from list</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Type</th>
+      <td>
+        <select name="btype" [(ngModel)]="book.type" #booktype=ngModel required>
+          <option value="">-------Select------</option>
+          <option value="Digital">Digital</option>
+          <option value="HardCopy">HardCopy</option>
+        </select>
+
+        <ul [hidden]=booktype.valid>
+          <li>please select one from list</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: right">
+        <button>Save</button>
+      </td>
+    </tr>
+  </table>
+</form>

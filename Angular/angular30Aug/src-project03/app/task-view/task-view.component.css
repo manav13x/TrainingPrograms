@@ -1,0 +1,25 @@
+div{
+    width: 720px;
+    padding: 0px;
+}
+span{
+    display: inline-block;
+    margin: 0px;
+    background-color: thistle;
+    padding: 9px;
+    font-weight: 300;
+    width: 70% ;
+}
+span:first-child{
+    background-color: black;
+    color:white;
+    width: 5%;
+}
+button {
+    width: 20%;
+    background-color: brown;
+    color:white;
+    margin: 0px;
+    padding: 9px;
+    display: inline-block;
+}

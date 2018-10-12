@@ -1,0 +1,34 @@
+<h3>Book List</h3>
+
+
+
+<table style="width: 100%">
+  <thead>
+      <th>Book#</th>
+      <th>Name</th>
+      <th>Rate</th>
+      <th>Quatity</th>
+      <th>Price</th>
+      <th>Action</th>
+    </thead>
+  <tfoot>
+    <th colspan="4">
+      {{books.length}} Book(s) Found
+    </th>
+    <th></th>
+  </tfoot>
+  <tbody>
+    <tr *ngFor="let book of books">
+      <td>{{book.id}}</td>
+      <td>{{book.name | uppercase}}</td>
+      <td>{{book.rate | currency : 'AUD'}}</td>
+      <td>{{book.qty | number : '2.0'}}</td>
+      <td>{{book.price | currency : 'AUD'}}</td>
+      <td>
+        <a class="btn" routerLink="/ivc/{{book.id}}">View</a>
+        <a class="btn" routerLink="/ie/{{book.id}}">Edit</a>
+        <a class="btn" (click)="deleteBook(book.id)">Delete</a>
+      </td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,58 @@
+h3{
+    text-align: center;
+}
+.emplyoeesList , .dashboard{
+    width:950px;
+    margin:auto;
+}
+.dashboard{
+    padding: 15px;
+}
+.dashboard>div{
+    padding: 10px;
+    background-color: seagreen;
+    color: white;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 5px;
+    border: 2px solid black;
+}
+.dashboard>div>img{
+    width: 20px;
+}
+.emplyoeeCard{
+    border:1px solid black;
+    border-radius:10px;
+    float:left;
+    width:255px;
+    height:100px;
+    margin:10px;
+    padding:10px;
+}
+.emplyoeeCard:hover{
+    background-color: cadetblue;
+    cursor: pointer;
+}
+.clear {
+    clear: both;
+}
+.deptIcon{
+    float:left;
+    width:50px;
+    height:100%;
+    margin-left: 4px;
+}
+.deptIcon img{
+    width: 50px;
+}
+.emplyoeeDetails{
+    width:200px;
+    height:100%;
+    float:left;
+}
+.emplyoeeDetails span{
+    display: block;
+    font-weight: 500;
+    padding:2px;
+    margin:2px;
+}

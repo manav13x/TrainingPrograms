@@ -1,0 +1,28 @@
+<h3>Emplyoee List</h3>
+
+
+
+<table style="width: 100%">
+  <thead>
+      <th>EmpId#</th>
+      <th>Emp Name</th>
+      <th>Basic</th>
+      <th>HRA</th>
+      <th>Dept.</th>
+  </thead>
+  <tfoot>
+    <th colspan="4">
+      {{emplist.length}} Item(s) Found
+    </th>
+    <th></th>
+  </tfoot>
+  <tbody>
+    <tr *ngFor="let item of emplist">
+      <td>{{item.empid | number : '6.0'}}</td>
+      <td>{{item.empname |  uppercase }}</td>
+      <td>{{item.basic | currency : 'INR': true :'5.2'}}</td>
+      <td>{{item.hra | percent }}</td>
+      <td>{{item.dept | titlecase}}</td>
+    </tr>
+  </tbody>
+</table>
