@@ -1,0 +1,9 @@
+127.0.0.1 - - [17/Sep/2018:13:51:20 +0530] "GET / HTTP/1.1" 404 1076
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:51:21 +0530] "GET /BookStoreApp/ HTTP/1.1" 200 1339
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:51:21 +0530] "GET /BookStoreApp/theme/style.css HTTP/1.1" 200 804
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:51:21 +0530] "GET /favicon.ico HTTP/1.1" 404 1087
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:51:29 +0530] "GET /BookStoreApp/deleteBook?bcode=101 HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:51:29 +0530] "GET /BookStoreApp/home HTTP/1.1" 200 1074
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:52:24 +0530] "GET /BookStoreApp/addBook HTTP/1.1" 200 1606
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:52:29 +0530] "GET /BookStoreApp/home HTTP/1.1" 200 1074
+0:0:0:0:0:0:0:1 - - [17/Sep/2018:13:52:53 +0530] "GET /BookStoreApp/editBook?bcode=102 HTTP/1.1" 200 1670

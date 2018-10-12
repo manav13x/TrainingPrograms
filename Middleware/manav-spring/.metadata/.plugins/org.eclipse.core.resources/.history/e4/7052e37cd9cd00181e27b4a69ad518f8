@@ -1,0 +1,5 @@
+package com.verizon.empPractice.model;
+
+public class Employee {
+
+}

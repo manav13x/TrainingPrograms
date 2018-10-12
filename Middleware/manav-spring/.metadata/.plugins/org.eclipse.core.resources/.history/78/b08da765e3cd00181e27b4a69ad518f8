@@ -1,0 +1,41 @@
+package com.verizon.test;
+
+import static org.junit.Assert.*;//new feature from class all static resources
+
+import org.junit.Test;
+
+import com.verizon.service.GreetingService;
+
+public class TestGreetingService {
+	
+	@Test
+	public void testGreet(){
+		//Prepare test case
+		
+		String input="vamsy";
+		String expectedOutput = "Hello vamsy";
+		
+		//Run the function to be to be tested 
+		
+		GreetingService gs = new GreetingService();
+		String actualOutput = gs.greet(input);
+		
+		//Check for test result
+		assertEquals(expectedOutput, actualOutput);
+	}
+	@Test
+	public void testGreetWithNull(){
+		//Prepare test case
+		
+		String input="vamsy";
+		String expectedOutput = "Hello vamsy";
+		
+		//Run the function to be to be tested 
+		
+		GreetingService gs = new GreetingService();
+		String actualOutput = gs.greet(input);
+		
+		//Check for test result
+		assertEquals(expectedOutput, actualOutput);
+	}
+}

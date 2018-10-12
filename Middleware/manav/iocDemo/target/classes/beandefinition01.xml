@@ -1,0 +1,49 @@
+<beans xmlns="http://www.springframework.org/schema/beans"	
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"	
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!-- This is the default bean injextion -->
+<bean
+id = "udsBean" 
+class  = "com.verizon.springCore.iocdemo.service.UserServiceDefaultImpl"
+/>
+<bean
+id = "upsBean" 
+class  = "com.verizon.springCore.iocdemo.service.UserServiceParmedImpl">
+<!-- <constructor-arg index = "0" value = "Namaskar"/> --><!-- this is constructor injection -->
+<property name="welcomeStatement" value ="Hanan"></property>
+<!-- this is setter injection -->
+</bean>
+<!-- 
+<bean 
+id = "wtpBean"
+class = "com.verizon.springCore.iocdemo.service.WelcomeStatementProviderTimlyImply"
+></bean>
+ -->
+<bean
+id = "uesBean" 
+class  = "com.verizon.springCore.iocdemo.service.UserServiceEnhancedImpl">
+ <!-- <constructor-arg index = "0" ref = "wtpBean"/>  --><!-- this is constructor injection -->
+<!--<property name="wsProvider" ref = "wtpBean"></property>--><!-- when  we use property tag its called setter injection -->
+<!-- this is setter injection -->
+<property name="wsProvider">
+<bean class = "com.verizon.springCore.iocdemo.service.WelcomeStatementProviderTimlyImply"></bean>
+</property><!-- we can also use constructor hear -->
+</bean> 
+
+<!-- *********************** -->
+<bean
+id = "umsBean" 
+class  = "com.verizon.springCore.iocdemo.service.UserServiceMultipleImpl">
+<property name="welcomeStatements">
+<set>
+	<value>Hai</value>
+	<value>How are u </value>
+	<value>Gracias</value>
+	<value>Mucho gusto!!</value>
+</set>
+</property>
+</bean> 
+
+
+</beans>
